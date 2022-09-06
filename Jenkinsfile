@@ -6,8 +6,5 @@ pipeline{
 			 echo $"{env.BUILD_NUMBER}"
 		      }
 	 }
-       }
-	 	
-	
-	
+       }	
 }

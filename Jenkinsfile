@@ -9,7 +9,17 @@ pipeline{
        echo "${CC}"
        echo "${env.BUILD_ID}"
        echo "${currentBuild.number}"
-      }
-    }
-  }
+       environment{
+        arijit="single"  
+				  }
+		   }
+				  }
+		}
+		
+	stage("Deploy"){
+	  steps{
+		echo "${arijit}"
+		      }
+		              }
+				 
 }

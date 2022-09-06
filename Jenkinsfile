@@ -1,15 +1,17 @@
 pipeline{
-  agent any
-  
+ agent any
   stages{
-    stage("print"){
+    stage("Build"){
       steps{
-        echo "Hello World arijit anand"
+        bat 'make'
+        archiveArtifacts artifacts: '**/target/*.jar',fingerprint: true
       }
     }
-    stage("current build"){
+    
+    stage("Test"){
       steps{
-        echo "The current build is ${currentBuild.number}"
+       bat 'make check || true' 
+       junit '**/target/*.xml'
       }
     }
   }

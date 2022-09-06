@@ -11,15 +11,15 @@ pipeline{
        echo "${currentBuild.number}"
        environment{
         arijit="single"  
-				  }
-		   }
-				  }
+			}
+		  }
+		}
 		}
 		
 	stage("Deploy"){
 	  steps{
 		echo "${arijit}"
 		      }
-		              }
+		}
 				 
 }

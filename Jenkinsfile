@@ -3,8 +3,8 @@ pipeline{
   stages{
     stage("Build"){
       steps{
-        bat 'make'
-        archiveArtifacts artifacts: '**/target/*.jar',fingerprint: true
+       echo "${env.BUILD_ID}"
+       echo "${currentBuild.number}"
       }
     }
     

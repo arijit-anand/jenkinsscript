@@ -5,7 +5,7 @@ pipeline{
     stage("print"){
       steps
       {
-        echo "Hello World"
+        echo "Hello World arijit anand"
       }
     }
   }

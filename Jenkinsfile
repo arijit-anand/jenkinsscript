@@ -3,9 +3,13 @@ pipeline{
   
   stages{
     stage("print"){
-      steps
-      {
+      steps{
         echo "Hello World arijit anand"
+      }
+    }
+    stage("current build"){
+      steps{
+        echo "The current build is ${currentBuild.number}"
       }
     }
   }

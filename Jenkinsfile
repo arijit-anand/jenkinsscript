@@ -34,5 +34,16 @@ pipeline {
                 echo "OK"   
             }
         }
+        
+        post{
+            always{
+                   echo "This will get triggered"
+                  }   
+            failure{
+                   echo "This is failed"
+                  }
+            }
+            
+        }
     }
 }

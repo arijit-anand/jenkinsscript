@@ -9,7 +9,7 @@ pipeline {
     }
     
     parameters{
-        string{name: 'greeting', defaultValue: 'Hello', description: 'This is how you should greet'}   
+        string{name:'greeting', defaultValue:'Hello', description:'This is how you should greet'}   
     }
     
     stages{

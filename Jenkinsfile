@@ -13,7 +13,7 @@ pipeline {
             steps{
                 echo "The value of no is ${env.no}, The type is ${env.no.class}"
                 echo "The value of name is ${env.name}, The type is ${env.name.class}"
-                echo "The value of credentials are ${4567}"
+                echo "The value of credentials are ${aws_password}"
             }
         }
         

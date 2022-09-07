@@ -5,7 +5,7 @@ pipeline {
         no="1"
         name="arijit"
         trigger=false
-        aws_password=credentials("4567")
+        aws_password=credentials('4567')
     }
     
     stages{

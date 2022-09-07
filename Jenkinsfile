@@ -4,7 +4,7 @@ pipeline {
     environment {
         no="1"
         name="arijit"
-        trigger=true
+        trigger=false
     }
     
     stages{

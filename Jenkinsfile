@@ -5,6 +5,7 @@ pipeline {
         no="1"
         name="arijit"
         trigger=false
+        aws_password=credentials("4567")
     }
     
     stages{
@@ -12,6 +13,7 @@ pipeline {
             steps{
                 echo "The value of no is ${env.no}, The type is ${env.no.class}"
                 echo "The value of name is ${env.name}, The type is ${env.name.class}"
+                echo "The value of credentials are ${4567}"
             }
         }
         

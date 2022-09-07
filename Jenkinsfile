@@ -18,7 +18,7 @@ pipeline {
         stage("something"){
             when{
                 expression{
-                    trigger==true   
+                    trigger.toBoolean()==true   
                 }
             }
             

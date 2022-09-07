@@ -1,9 +1,9 @@
 pipeline {
     agent any
-    stages {
-        stage('Example') {
-            steps {
-                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+    stages{
+        stage("printenv"){
+            steps{
+                echo "printenv | sort"   
             }
         }
     }

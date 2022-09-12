@@ -6,6 +6,9 @@ pipeline{
 	CRED=credentials("thisisit")
   }
 	
+  parameters{
+	  string(name :'arijit',environment :'xe06aws')
+	
   stages{
     stage("build"){
     steps{ 

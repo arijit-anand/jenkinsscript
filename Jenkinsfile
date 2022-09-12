@@ -10,8 +10,8 @@ pipeline{
     stage("build"){
     steps{ 
       echo "This is build step $variable"
-      echo $"CRED_USR"
-      echo $"CRED_PSW"
+      echo "$CRED_USR"
+      echo "$CRED_PSW"
     }
     }
     

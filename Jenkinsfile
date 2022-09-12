@@ -2,13 +2,16 @@ pipeline{
   agent any
 	
   environment{
-  	variable="arijit"  
+  	variable="arijit" 
+	CRED=credentials("thisisit")
   }
 	
   stages{
     stage("build"){
     steps{ 
       echo "This is build step $variable"
+      echo $"CRED_USR"
+      echo $"CRED_PSW"
     }
     }
     

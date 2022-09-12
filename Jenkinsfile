@@ -9,7 +9,7 @@ pipeline{
     
     stage("deploy")
     {
-      stages{
+      parallel{
         stage("deploy-sequential"){
           steps{
            echo "This is deployment sequential" 

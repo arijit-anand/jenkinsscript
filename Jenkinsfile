@@ -1,9 +1,14 @@
 pipeline{
   agent any
+	
+  environment{
+  	variable="arijit"  
+  }
+	
   stages{
     stage("build"){
     steps{ 
-      echo "This is build step"
+      echo "This is build step $variable"
     }
     }
     

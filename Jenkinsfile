@@ -23,6 +23,12 @@ pipeline{
           }
         }
       }
-  }
-}
+	}
+	}
+	
+	post{
+		always{
+			echo "This is your captain speaking!"
+		}
+	}
 }

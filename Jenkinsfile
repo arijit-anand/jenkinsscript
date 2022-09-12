@@ -1,5 +1,6 @@
 pipeline{
-  agent any
+  agent 
+	{label 'docker'}
   stages{
     stage("build"){
     steps{ 
@@ -27,7 +28,7 @@ pipeline{
 	}
 	
 	post{
-		always{
+		changed{
 			echo "This is your captain speaking!"
 		}
 	}

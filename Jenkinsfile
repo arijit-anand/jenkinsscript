@@ -8,6 +8,7 @@ pipeline{
 	
   parameters{
 	  string(name :'arijit',environment :'xe06aws')
+  }
 	
   stages{
     stage("build"){
@@ -43,4 +44,4 @@ pipeline{
 		}
 	}
 }
-}
+

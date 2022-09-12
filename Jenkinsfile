@@ -7,7 +7,7 @@ pipeline{
   }
 	
   parameters{
-	  string(name :'arijit',environment :'xe06aws')
+	  string(name:'arijit',environment:'xe06aws')
   }
 	
   stages{

@@ -7,7 +7,7 @@ pipeline{
   }
 	
   parameters{
-	  string(name: 'ENVIRONMENT', defaultValue: 'development', description: 'set env to dev')
+	  string(name: 'arijit', environment1: 'xe06aws')
   }
 	
   stages{
